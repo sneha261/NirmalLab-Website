@@ -1,0 +1,567 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- for counter  -->
+
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="allcss.css">
+    <link rel="stylesheet" href="product.css">
+
+    <title>
+        Nirmal Labs | No 1 IT Company in Varanasi | Uttar Pradesh </title>
+
+    <!-- <head> -->
+
+
+</head>
+
+<body>
+    <!--  //navbar-->
+    <header id="header" class="fixed-top header-scrolled">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-default ">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.PNG" width="100" height="40" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto mx-2">
+
+                    <li class="nav-item active mx-2">
+                        <a class="nav-link" href="index.html"><strong>Home </strong><span
+                                class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="Team.html"><strong>Team</strong></a>
+                    </li>
+
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="aboutus.html"><strong>AboutUs</strong></a>
+                    </li>
+
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="careers.html"><strong>Careers</strong></a>
+                    </li>
+
+                    <!-- <li class="nav-item mx-2">
+                <a class="nav-link" href="#services"><strong>Services</strong></a>
+              </li> -->
+
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="product.html"><strong>Products</strong></a>
+                    </li>
+
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#firstcode"><strong>FirstCode</strong></a>
+                    </li>
+
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="contatcus.html"><strong>ContactUs</strong></a>
+                    </li>
+                </ul>
+
+                <form class="form-inline  my-2 my-lg-0">
+                    <!--          Search Bar-->
+
+                    <div class="searchbar">
+                        <input class="search_input" type="text" name="" placeholder="Search...">
+                        <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+                    </div>
+
+
+
+                    <!-- Button trigger to Login modal -->
+                    <!-- {% if user.is_authenticated %}
+              <ul class="navbar-nav mr-auto">
+      
+                   <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <strong>Welcome {{request.user}}</strong>
+      
+              </a>
+      
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/logout">Logout</a>
+              </div>
+                   </li>
+              </ul>
+      
+              {% else %} -->
+
+                    <!-- Login Page -->
+                    <!-- <button type="button" class="btn btn-primary mx-2" data-toggle="modal" data-target="#LoginModal">
+                <strong>Login</strong>
+              </button> -->
+                    <!-- Button trigger to Signup modal -->
+
+                    <!-- <button type="button" class=" btn btn-primary btn-login " data-toggle="modal" data-target="#SignupModal">
+                <strong>Signup</strong>
+              </button> -->
+                    <!-- {%  endif %} -->
+                </form>
+                <!-- Signup Modal -->
+                <!-- <div class="modal fade" id="SignupModal" tabindex="-1" aria-labelledby="SignupModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="SignupModalLabel">Signup here</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form action='/signup' method='post'>
+    
+    
+                      <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control" name="username" id="username"
+                          placeholder="Choose a unique username (Lowercase & Alphanumeric)" required>
+                      </div>
+    
+                      <div class="form-group">
+                        <label for="fname">First name</label>
+                        <input type="text" class="form-control" name="fname" id="fname" placeholder="Enter first name"
+                          required>
+                      </div>
+    
+                      <div class="form-group">
+                        <label for="lname">Last name</label>
+                        <input type="text" class="form-control" name="lname" id="lname" placeholder="Enter last name"
+                          required>
+                      </div>
+    
+                      <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com"
+                          required>
+                      </div>
+    
+                      <div class="form-group">
+                        <label for="pass1">Choose a Password</label>
+                        <input type="password" class="form-control" name="pass1" id="pass1" placeholder="******" required>
+                      </div>
+    
+                      <div class="form-group">
+                        <label for="pass2">Confirm a Password</label>
+                        <input type="password" class="form-control" name="pass2" id="pass2"
+                          placeholder="Enter your password again" required>
+                      </div> -->
+                <!-- {% csrf_token %} -->
+                <!-- <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+    
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+                <!--  login Modal -->
+                <!-- <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="LoginModalLabel">Login here</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form action='/login' method='post'> -->
+                <!-- {% csrf_token %} -->
+
+                <!-- <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control" name="loginuser" id="loginuser"
+                          placeholder="Choose a unique username (Lowercase & Alphanumeric)" required>
+                      </div>
+    
+                      <div class="form-group">
+                        <label for="pass">Password</label>
+                        <input type="password" class="form-control" name="loginpassword" id="loginpassword"
+                          placeholder="******">
+    
+    
+                      </div>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+    
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+    
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+            </div>
+        </nav>
+    </header>
+    <!--// BANNER AREA //-->
+    <section class="u-align-left u-clearfix u-image u-section-2" id="carousel_3e8e" data-image-width="1980"
+        data-image-height="1350">
+        <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+            <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+                <div class="u-gutter-0 u-layout">
+                    <div class="u-layout-row">
+                        <div
+                            class="u-align-left u-container-style u-layout-cell u-left-cell u-shape-rectangle u-size-27 u-layout-cell-1">
+                            <div class="u-container-layout u-valign-middle u-container-layout-1">
+                                <h1 class="u-custom-font u-text u-text-body-alt-color u-text-1"
+                                    style="color: white; font-family: barlow;">
+                                    Products</h1>
+                                <p class="u-text u-text-body-alt-color u-text-2"
+                                    style="color: white; font-family: barlow; font-size: 30px;">Our role is to
+                                    imagine products that don’t exist and guide them to life.
+
+                                </p>
+
+
+
+                            </div>
+                        </div>
+                        <div class="u-align-left u-container-style u-image u-layout-cell u-right-cell u-size-33 u-image-1"
+                            data-image-width="1372" data-image-height="1235">
+                            <div class="u-container-layout u-valign-bottom u-container-layout-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="demo" id="demo">
+
+    </div>
+    <footer id="footer" style="margin-top: -63px;">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <img src="./img/logo.jpg" alt="" style="max-width: 150px;">
+                        <p>
+                            Address: 3rd Floor Kuber Complex, Rathyatra, Varanasi, Uttar pradesh, 221010<br><br>
+                            <strong>Phone:</strong> (+91) 9336180630<br>
+                            <strong>Email:</strong> contact@nirmallabs.com
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Internship</h4>
+                        <ul>
+
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Android App Development</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4> &nbsp; &nbsp;&nbsp;&nbsp; Our Social Networks</h4>
+
+                        <div class="social-links mt-3">
+                            <a href="https://twitter.com/LabsNirmal" class="fab fa-twitter"><i
+                                    class="bx bxl-twitter"></i></a>
+                            <a href="https://www.facebook.com/NirmalLabsVaranasi/" class="fab fa-facebook-f"><i
+                                    class="bx bxl-facebook"></i></a>
+                            <a href="https://in.linkedin.com/in/nirmal-labs-680102187" class="fab fa-linkedin-in"><i
+                                    class="bx bxl-instagram"></i></a>
+                            <a href="https://www.instagram.com/nirmallabs/" class="fab fa-instagram"><i
+                                    class="bx bxl-skype"></i></a>
+                            <a href="https://nirmallabs.com/" class="fab fa-google-plus-g"><i
+                                    class="bx bxl-linkedin"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="container footer-bottom clearfix">
+            <div class="copyright">
+                © Copyright 2019 <strong><span>NirmalLab</span></strong>. All Rights Reserved
+            </div>
+
+        </div>
+    </footer>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center active"
+        style="text-decoration: none;"><i class="fas fa-arrow-up"></i></a>
+
+
+
+
+
+    <script>
+        /**
+      * Easy selector helper function
+      */
+        const select = (el, all = false) => {
+            el = el.trim()
+            if (all) {
+                return [...document.querySelectorAll(el)]
+            } else {
+                return document.querySelector(el)
+            }
+        }
+        /**
+         * Easy on scroll event listener 
+         */
+        const onscroll = (el, listener) => {
+            el.addEventListener('scroll', listener)
+        }
+
+
+        //back to top
+        let backtotop = select('.back-to-top')
+        if (backtotop) {
+            const toggleBacktotop = () => {
+                if (window.scrollY > 300) {
+                    backtotop.classList.add('active')
+                } else {
+                    backtotop.classList.remove('active')
+                }
+            }
+            window.addEventListener('load', toggleBacktotop)
+            onscroll(document, toggleBacktotop)
+        }
+
+        // Product add 
+
+        const teamDataOne = [
+            {
+                img: "./img/img1.webp",
+                title: "Quick Scanner",
+                description: "Quick Scanner App is the Best Indian Document scanner app. It turns your phone camera to a PDF/Image Scanner, Document Scanner and Image maker with Different Types. <br><br>",
+                playstore: "https://play.google.com/store/apps/details?id=com.runtime.camscanner.kagazdocumentscanner",
+                website: "https://nirmallabs.com/QuickScanner/",
+
+            },
+            {
+                img: "./img/img2.png",
+                title: "Quick Share",
+                description: "Share & transfer files between Android devices at fast & Lightening speeds without the Internet, Bluetooth or cables.<br><br>",
+                playstore: "https://play.google.com/store/apps/details?id=com.runtime.quickshare.sharefiles.shareit.filetransfer",
+                website: "https://nirmallabs.com/QuickShare/",
+
+            },
+            {
+                img: "./img/img3.png",
+                title: "Hindi Panchang Calendar 2021",
+                description: "Easy to use and know all Holidays, Panchang, Muhurat(Shaadi Muhurat , Vahan Purchase Muhurat, Property Purchase Muhurat, Grih Pravesh Muhurat) of Calendarहिंदी कैलेंडर २०२० एंड पंचांग 2020 App , जिसके थ्रू आप सभी प्रकार के त्यौहार , सभी प्रकार के मुहूर्त (शुभ विवाह मुहूर्त , वाहन परचेस मुहूर्त / गाडी खरीदने की तिथि , गृह प्रवेश मुहूर्त , प्रॉपर्टी परचेस मुहूर्त ) देख सकते है | <br><br>",
+                playstore: "https://play.google.com/store/apps/details?id=com.nirmallabs.calender",
+                website: "https://nirmallabs.com/Calendar2021/",
+
+            },
+            {
+                img: "./img/img4.jpg",
+                title: "Internet Speed test WiFi Speed Test WiFi Analyzer",
+                description: "Speed Test Original is a simple but powerful free internet speed meter, which measures the speed of the Internet and WiFi.<br><br>",
+                playstore: "https://play.google.com/store/apps/details?id=com.runtime.fast.speedtest",
+                website: "internet/index.html",
+
+            },
+            {
+                img: "./img/img5.webp",
+                title: "Best Hindi Paheliyan | पहेलियाँ | Riddles Hindi",
+                description: "Best Paheli in Hindi is the best paheli app ever. The Pahli app contains the best unique and huge collection of Hindi Paheliyan with Question and Answer in Hindi.This app, Puzzle in Hindi or Riddles which sharpens your mind and motivates users to read and share and compete with their friends and family members.<br><br>",
+                playstore: "https://play.google.com/store/apps/details?id=com.nirmallabs.bestpaheliyan",
+                website: "hindi/index.html",
+
+            },
+            {
+                img: "./img/img6.webp",
+                title: "Sweet Recipes In Hindi | मिठाई रेसिपी - Offline",
+                description: "आज हम आपके लिए 200+ भारतीय मिठाई रेसिपी इन हिंदी लेकर आए हैं। ये स्वीट रेसिपीज Sweet Recipes बेहद पॉपुलर हैं और खाने में बेहद स्‍वादिष्‍ट होती हैं। ये मिठाइयां आप किसी खास मौके जैसे बर्थडे पार्टी या त्‍यौहार पर बना कर सबका दिल जीत सकते हैं। तो अगर आप अभी तक दिवाली की मिठाई Diwali ki Mithai रक्षाबंधन की मिठाई Raksha Bandhan ki Mithai बनाने की रेसिपी पूछते रहे हैं, तो इन मिठाई रेसिपीज Mithai Recipes को पढ़ें और झटपट अपनी मनपसंद मिठाई की रेसिपी ट्राई करें। हमें यकीन है कि मिठाई रेसिपी इन हिंदी Sweets Recipes in Hindi आपको जरूर पसंद आएंगी।<br><br>",
+                playstore: "https://play.google.com/store/apps/details?id=com.nirmallabs.sweetrecipesinhindi",
+                website: "sweet/index.html",
+
+            },
+            {
+                img: "./img/img7.webp",
+                title: "आरती संग्रह : All God - Goddess Aarti Sangrah",
+                description: "All God-Goddess Aarti Sangrah' provides most famous Hindu God-Goddess Aarti at one place. This app is for all religious people who want to hear all God-Goddess Aarti at a single place with complete devotion.<br><br>",
+                playstore: "https://play.google.com/store/apps/details?id=com.nirmallabs.aarti.hindiaarti",
+                website: "aarti/index.html",
+
+            },
+            {
+                img: "./img/img8.webp",
+                title: "Media Player for Android - All Format Media Player",
+                description: "This Video Player All Format is a professional video playback tool. It supports ALL video formats, 4K/ultra HD video files, and plays them with high-definition.This Media Player is one of the best HD video player for android phone. Video Player All Format also protects your private video from being deleted or seen when people use your device.<br><br>",
+                playstore: "https://play.google.com/store/apps/details?id=com.nirmallabs.mediaplayer.musicplayer.videoplayer",
+                website: "media/index.html",
+
+            },
+            {
+                img: "./img/img9.webp",
+                title: "Periodic Table - Periodic Table 2020 - Chemistry",
+                description: "Periodic Table is a free application for Android which displays the entire periodic table on opening. The table has a long-form approved by the International Union of Pure and Applied Chemistry (IUPAC). As well as the Periodic Table of chemical elements, there is also a Table of Solubility.<br><br>",
+                playstore: "https://play.google.com/store/apps/details?id=com.nirmallabs.periodictable",
+                website: "periodic/index.html",
+
+            },
+            {
+                img: "./img/img10.webp",
+                title: "ABC Kids - Kids Learning App, Tracing & Phonics",
+                description: "ABC Kids is a free phonics and alphabet teaching app that makes learning fun for children, from toddlers all the way to preschoolers and kindergartners.<br><br>",
+                playstore: "https://play.google.com/store/apps/details?id=com.nirmallabs.kids.abc",
+                website: "kids/index.html",
+
+            },
+            {
+                img: "./img/img11.webp",
+                title: "All Maths Formulas",
+                description: "you'll find formulas very simply explained in app with necessary figures will help you to understand very easily. includes 1. Algebra - Factoring formulas - Product formulas - Roots formula - Powers formula - Logarithmic formula - Useful equations - Complex number - Binomial theorem 2. Geometry - Cone - Cylinder - Isosceles Triangle - Square - Sphere - Rectangle - Rhombus - Parallelogra.<br><br>",
+                playstore: "https://play.google.com/store/apps/details?id=com.nirmallabs.allmathsformulas",
+                website: "maths/index.html",
+
+            },
+        ];
+        const container = document.getElementById("demo")
+        var content = "";
+        teamDataOne.forEach(function (result, i) {
+            if (i == 0) {
+                //add start row 
+
+                content += '<div class="container" id="container">'
+            }
+
+
+            // Construct card content
+
+            content += `
+
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <!-- <div class="our-team"> -->
+                    <div class="pic">
+                        <img src="${result.img}" alt="">
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+            <div class="team-content">
+                <h3 class="title">${result.title}</h3>
+               
+            </div>
+           
+            <div class="our-team-content" style="padding-bottom: 20px;">
+
+                <p class="description">
+                    ${result.description}
+                    <a target="_blank"
+                    href=${result.playstore}
+                        class="btn_3 btn-hire btn-play">Play Store</a>
+                    <a target="_blank" href= ${result.website} class="btn_3 btn-hire btn-visit">Visit Web</a>
+
+                </p>
+            </div>
+
+                `;
+
+
+
+            if (i != 0 && i % 3 == 0 && i <= 2) {
+
+                // add end of row ,and start new row on every 5 elements
+                // content += '</div>'
+                content += '</div><div class="container" id="container">'
+            }
+
+            // Append newyly created card element to the container
+
+        });
+        content += '</div>'
+        container.innerHTML += content;
+
+        // Hamburger Menu 
+        var button = document.getElementById('navbar-toggler'),
+            span = button.getElementsByTagName('span')[0];
+
+        button.onclick = function () {
+            span.classList.toggle('.navbar-toggler-icon-close');
+        };
+
+        $('.navbar-toggler').on('click', toggleOnClass);
+
+        function toggleOnClass(event) {
+            var toggleElementId = '#' + $(this).data('toggle'),
+                element = $(toggleElementId);
+
+            element.toggleClass('on');
+
+        }
+
+        // close hamburger menu after click a
+        $('.nav li a').on("click", function () {
+            $('.navbar-toggler').click();
+        });
+
+
+    </script>
+
+    <script src="path/to/carousel/lib"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

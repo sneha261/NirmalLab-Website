@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="allcss.css">
+    <link rel="stylesheet" href="careers.css">
+
+    <title>
+        Nirmal Labs | No 1 IT Company in Varanasi | Uttar Pradesh </title>
+
+    <!-- <head> -->
+
+</head>
+
+<body>
+
+    <!--  //navbar-->
+
+    <!--  //navbar-->
+    <header id="header" class="fixed-top header-scrolled">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-default ">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.PNG" width="100" height="40" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto mx-2">
+
+                    <li class="nav-item active mx-2">
+                        <a class="nav-link" href="index.html"><strong>Home </strong><span
+                                class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="Team.html"><strong>Team</strong></a>
+                    </li>
+
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="aboutus.html"><strong>AboutUs</strong></a>
+                    </li>
+
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="careers.html"><strong>Careers</strong></a>
+                    </li>
+
+                    <!-- <li class="nav-item mx-2">
+                        <a class="nav-link" href="#services"><strong>Services</strong></a>
+                    </li> -->
+
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="product.html"><strong>Products</strong></a>
+                    </li>
+
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#firstcode"><strong>FirstCode</strong></a>
+                    </li>
+
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="contatcus.html"><strong>ContactUs</strong></a>
+                    </li>
+                </ul>
+
+                <form class="form-inline  my-2 my-lg-0">
+                    <!--          Search Bar-->
+
+                    <div class="searchbar">
+                        <input class="search_input" type="text" name="" placeholder="Search...">
+                        <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+                    </div>
+
+
+
+                    <!-- Button trigger to Login modal -->
+                    <!-- {% if user.is_authenticated %}
+          <ul class="navbar-nav mr-auto">
+  
+               <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <strong>Welcome {{request.user}}</strong>
+  
+          </a>
+  
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/logout">Logout</a>
+          </div>
+               </li>
+          </ul>
+  
+          {% else %} -->
+
+                    <!-- Login Page -->
+                    <!-- <button type="button" class="btn btn-primary mx-2" data-toggle="modal" data-target="#LoginModal">
+                        <strong>Login</strong>
+                    </button> -->
+                    <!-- Button trigger to Signup modal -->
+
+                    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#SignupModal">
+                        <strong>Signup</strong>
+                    </button> -->
+                    <!-- {%  endif %} -->
+                </form>
+                <!-- Signup Modal -->
+                <div class="modal fade" id="SignupModal" tabindex="-1" aria-labelledby="SignupModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="SignupModalLabel">Signup here</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form action='/signup' method='post'>
+
+
+                                    <div class="form-group">
+                                        <label for="username">Username</label>
+                                        <input type="text" class="form-control" name="username" id="username"
+                                            placeholder="Choose a unique username (Lowercase & Alphanumeric)" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="fname">First name</label>
+                                        <input type="text" class="form-control" name="fname" id="fname"
+                                            placeholder="Enter first name" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="lname">Last name</label>
+                                        <input type="text" class="form-control" name="lname" id="lname"
+                                            placeholder="Enter last name" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="email">Email address</label>
+                                        <input type="email" class="form-control" name="email" id="email"
+                                            placeholder="name@example.com" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="pass1">Choose a Password</label>
+                                        <input type="password" class="form-control" name="pass1" id="pass1"
+                                            placeholder="******" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="pass2">Confirm a Password</label>
+                                        <input type="password" class="form-control" name="pass2" id="pass2"
+                                            placeholder="Enter your password again" required>
+                                    </div>
+                                    <!-- {% csrf_token %} -->
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  login Modal -->
+                <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="LoginModalLabel">Login here</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form action='/login' method='post'>
+                                    <!-- {% csrf_token %} -->
+
+                                    <div class="form-group">
+                                        <label for="username">Username</label>
+                                        <input type="text" class="form-control" name="loginuser" id="loginuser"
+                                            placeholder="Choose a unique username (Lowercase & Alphanumeric)" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="pass">Password</label>
+                                        <input type="password" class="form-control" name="loginpassword"
+                                            id="loginpassword" placeholder="******">
+
+
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <div id="primary" class="content-area">
+        <main id="main" class="site-main" role="main">
+
+
+            <!--// BANNER AREA //-->
+            <section class="u-align-left u-clearfix u-image u-section-2" id="carousel_3e8e" data-image-width="1980"
+                data-image-height="1350">
+                <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+                    <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+                        <div class="u-gutter-0 u-layout">
+                            <div class="u-layout-row">
+                                <div
+                                    class="u-align-left u-container-style u-layout-cell u-left-cell u-shape-rectangle u-size-27 u-layout-cell-1">
+                                    <div class="u-container-layout u-valign-middle u-container-layout-1">
+                                        <h1 class="u-custom-font u-text u-text-body-alt-color u-text-1"
+                                            style="color: white; font-family: barlow;">
+                                            Career</h1>
+                                        <p class="u-text u-text-body-alt-color u-text-2"
+                                            style="color: white; font-family: barlow; font-size: 30px;">Find out what
+                                            you like doing best and get someone to pay you for doing it.
+
+                                        </p>
+
+
+
+                                    </div>
+                                </div>
+                                <div class="u-align-left u-container-style u-image u-layout-cell u-right-cell u-size-33 u-image-1"
+                                    data-image-width="1372" data-image-height="1235">
+                                    <div class="u-container-layout u-valign-bottom u-container-layout-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- <section class="banner clearfix" style="padding-bottom: 0px;">
+                <div class="container-fluid" style="height: 440px;
+   background: url(careers.jpg);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;">
+                    <div class="row justify-content-center align-self-center">
+                        <div class="col-md-7 mt-5 intro-info order-md-first order-last">
+                            <h1 class="wow fadeInUp text-center" data-wow-delay="0.1s" data-wow-duration="0.8s"
+                                style="margin-top: 100px; color: rgb(255, 140, 0); -webkit-text-stroke: 1px black; visibility: visible; animation-duration: 0.8s; animation-delay: 0.1s; animation-name: fadeInUp;">
+                                Careers</h1>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+            <!--// #BANNER END //-->
+
+            <!--// PLATFORME //-->
+            <br>
+            <!-- <section class="discover wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                <div class="container">
+
+                    <hr>
+                    <div class="row feature-item ">
+
+                        <div class="col-sm-8  wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                            <h4 class="head wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="0.1s"
+                                style="visibility: visible; animation-duration: 0.1s; animation-delay: 0.1s; animation-name: fadeInUp;">
+                                App Development </h4>
+                            <p data-wow-delay="0.2s" data-wow-duration="0.2s">
+                                Building an android app is such a amazing thing to do. If you have a basic knowledge of
+                                core java and know the concept of object-oriented programming (OOP), then you are
+                                welcome to our team.
+                                <br> You can learn:- <b> Android</b>, <b>XML Designing</b>, <b>Sqlite Database</b>,
+                                <b>Flutter</b> and <b>React Native</b>.
+                            </p>
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <h2 id="opper">Apply for this Opportunity</h2>
+                                </div>
+                                <div class="col-sm-4 btn"><a class="align-right apply"
+                                        href="applynow.html"
+                                        target="_blank">Apply Now</a></div>
+
+                            </div>
+                            <br>
+
+                        </div>
+                        <div class="col-sm-4  wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                            <img src="app.jpg" data-wow-delay="0.2s" data-wow-duration="0.2s"
+                                alt="Learn Web Development" style="max-width: 300px;display: block;margin: auto;">
+                        </div>
+
+                    </div>
+                    <hr>
+                    <br>
+                    <br>
+
+
+                    <div class="row feature-item ">
+
+                        <div class="col-sm-8  wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                            <h4 class="head wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="0.1s"
+                                style="visibility: visible; animation-duration: 0.1s; animation-delay: 0.1s; animation-name: fadeInUp;">
+                                Graphics Design</h4>
+                            <p data-wow-delay="0.2s" data-wow-duration="0.2s" style="content: justify;">
+                                Are you curious about what graphic design really is? This internship defines graphic
+                                design, so you can understand its purpose and what it accomplishes. Learn how design is
+                                used to convey ideas and concepts, and to enhance interactive experiences. Discover the
+                                impact that strong visual communication has on individuals, businesses, and the world.
+                                Then, get ready to explore internship courses that will help you build graphic design
+                                skills. <br><br>
+                                You can learn and practice with hands on exercises in <b>Adobe XD,</b> <b>
+                                    Photoshop,</b> <b> Illustrator,</b><b> InDesign </b> and <b> Figma.</b>
+                            </p>
+
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <h2 id="opper">Apply for this Opportunity</h2>
+                                </div>
+                                <div class="col-sm-4 btn"><a class="align-right apply"
+                                        href="https://docs.google.com/forms/d/e/1FAIpQLSfYZNa5JI73cr5r0KeNq4nx08l3ndsiHwVbGWYhUpydHh6Ccw/viewform"
+                                        target="_blank">Apply Now</a></div>
+                            </div>
+                            <br>
+                        </div>
+
+                        <div class="col-sm-4  wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                            <img src="graphic.jpg" data-wow-delay="0.2s" data-wow-duration="0.2s"
+                                alt="Learn Web Development"
+                                style="max-width: 300px;display: block;margin: auto; height:350px;">
+                        </div>
+
+                    </div>
+                    <hr>
+                    <br>
+                    <br>
+
+                    <div class="row feature-item ">
+
+                        <div class="col-sm-8  wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                            <h4 class="head wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="0.1s"
+                                style="visibility: visible; animation-duration: 0.1s; animation-delay: 0.1s; animation-name: fadeInUp;">
+                                Web Development </h4>
+                            <p data-wow-delay="0.2s" data-wow-duration="0.2s">
+                                Want to know how to build and design a web app, if 'yes' then you are welcome to our
+                                team. <br>
+                                Learn some popular technologies and programming languages like - <b>Html</b> <b>CSS</b>,
+                                <b>Bootstrap</b>, <b>Javascript</b>, <b>Jquery</b>, <b>Node js</b>, <b>React JS</b>
+                                and<b>
+                                    Python</b>.
+                            </p>
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <h2 id="opper">Coming Soon...</h2>
+                                </div>
+                                <div class="col-sm-4 btn"><span class="align-right apply" href="">COMING SOON</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4  wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                            <img src="webdevelopment.jpg" data-wow-delay="0.2s" data-wow-duration="0.2s"
+                                alt="Learn Web Development" style="max-width: 300px;display: block;margin: auto;">
+                        </div>
+
+                    </div>
+                </div>
+            </section> -->
+
+            <br>
+            <div class="main" id="main">
+
+            </div>
+
+
+
+
+
+
+    </div>
+    <script>
+        /**
+     * Easy selector helper function
+     */
+        const select = (el, all = false) => {
+            el = el.trim()
+            if (all) {
+                return [...document.querySelectorAll(el)]
+            } else {
+                return document.querySelector(el)
+            }
+        }
+        /**
+         * Easy on scroll event listener 
+         */
+        const onscroll = (el, listener) => {
+            el.addEventListener('scroll', listener)
+        }
+
+
+        //back to top
+        let backtotop = select('.back-to-top')
+        if (backtotop) {
+            const toggleBacktotop = () => {
+                if (window.scrollY > 300) {
+                    backtotop.classList.add('active')
+                } else {
+                    backtotop.classList.remove('active')
+                }
+            }
+            window.addEventListener('load', toggleBacktotop)
+            onscroll(document, toggleBacktotop)
+        }
+
+        const teamDataOne = [
+            {
+                i: "fa fa-mobile",
+                color: "gray",
+                title: "App Development",
+                description: "Building an android app is such a amazing thing to do. If you have a basic knowledge of core java and know the concept of object-oriented programming (OOP), then you are welcome our team. <br> You can learn:- <b> Android</b>, <b>XML Designing</b>, <b>Sqlite Database</b>,<b>Flutter</b> and <b>React Native</b>.",
+                applyname: "Apply for this Opportunity",
+                applybutton: "Apply Now",
+
+            },
+            {
+                i: "fa fa-desktop",
+                color: "red",
+                title: "Graphics Design",
+                description: "Are you curious about what graphic design really is? This internship defines graphic design,so you can understand its purpose and what it accomplishes. Learn how design is used to convey ideas and concepts, and to enhance interactive experiences. Discover the impact that strong visual communication has on individuals, businesses, and the world. Then, get ready to explore internship courses that will help you build graphic design skills.<br> You can learn and practice with hands on exercises in <b>Adobe XD,</b> <b> Photoshop,</b> <b> Illustrator,</b><b> InDesign </b> and <b> Figma.</b>",
+                applyname: "Apply for this Opportunity",
+                applybutton: "Apply Now",
+
+            },
+            {
+                i: "fa fa-globe",
+                title: "Web Design",
+                description: "Want to know how to design a web app, if 'yes' then you are welcome to our team. <br> Learn some popular technologies and programming languages like - <b>Html</b>, <b>CSS</b>, <b>Bootstrap</b>, <b>Javascript</b>, <b>Jquery</b>.<br><br><br><br>",
+                applyname: "Coming Soon..",
+                applybutton: "Coming Soon",
+
+            },
+            {
+                i: "fa fa-rocket",
+                color: "yellow",
+                title: "Web Development",
+                description: " Want to know how to build a web app, if 'yes' then you are welcome to our team. <br> Learn some popular technologies and programming languages like - <b>Node js</b>, <b>React, JS</b>, and<b> Python</b>.<br><br><br><br>",
+                applyname: "Coming Soon..",
+                applybutton: "Coming Soon",
+
+            },
+        ];
+        const container = document.getElementById("main")
+        var content = "";
+        teamDataOne.forEach(function (result, i) {
+            if (i == 0) {
+                //add start row 
+
+                content += '<div class="container" style="margin-bottom: 100px;">'
+            }
+
+
+            // Construct card content
+
+            content += `
+
+            <div class="col-md-3 col-sm-6" style="margin: 0px 44px; margin-bottom: 68px;">
+                        <div class="serviceBox ${result.color}">
+                            <div class="service-icon">
+                                <span><i class="${result.i}"></i></span>
+                            </div>
+                            <h3 class="title">${result.title}</h3>
+                            <p class="description" data-wow-delay="0.2s" data-wow-duration="0.2s">
+                                ${result.description}
+                            </p>
+                            <div class="row" style="padding: 0 117px;">
+                                <div class="col-sm-8">
+                                    <h2 id="opper" >${result.applyname}</h2>
+                                </div>
+                                
+                                <div class="text-center">
+                                    <!-- Animated button -->
+                                    <div class="col-sm-4 btn" style="margin: 0px 42px;"><a
+                                            class="animated-btn text-white"
+                                            href="https://docs.google.com/forms/d/e/1FAIpQLSeejjQ8zmTzOHoGUsQwuf14iRRnCsAxXazWJxQruqJYyIKh-g/viewform"
+                                            target="_blank">${result.applybutton}</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                `;
+
+
+
+            if (i != 0 && i % 3 == 0 && i <= 2) {
+
+                // add end of row ,and start new row on every 5 elements
+                // content += '</div>'
+                content += '<div class="container" style="margin-bottom: 100px;">'
+            }
+
+            // Append newyly created card element to the container
+
+        });
+        content += '</div>'
+        container.innerHTML += content;
+
+
+        // Hamburger Menu 
+        var button = document.getElementById('navbar-toggler'),
+            span = button.getElementsByTagName('span')[0];
+
+        button.onclick = function () {
+            span.classList.toggle('.navbar-toggler-icon-close');
+        };
+
+        $('.navbar-toggler').on('click', toggleOnClass);
+
+        function toggleOnClass(event) {
+            var toggleElementId = '#' + $(this).data('toggle'),
+                element = $(toggleElementId);
+
+            element.toggleClass('on');
+
+        }
+
+        // close hamburger menu after click a
+        $('.nav li a').on("click", function () {
+            $('.navbar-toggler').click();
+        });
+
+    </script>
+
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <img src="./img/logo.jpg" alt="" style="max-width: 150px;">
+                        <p>
+                            Address: 3rd Floor Kuber Complex, Rathyatra, Varanasi, Uttar pradesh, 221010<br><br>
+                            <strong>Phone:</strong> (+91) 9336180630<br>
+                            <strong>Email:</strong> contact@nirmallabs.com
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Internship</h4>
+                        <ul>
+
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Android App Development</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Our Social Networks</h4>
+
+                        <div class="social-links mt-3">
+                            <a href="https://twitter.com/LabsNirmal" class="fab fa-twitter"><i
+                                    class="bx bxl-twitter"></i></a>
+                            <a href="https://www.facebook.com/NirmalLabsVaranasi/" class="fab fa-facebook-f"><i
+                                    class="bx bxl-facebook"></i></a>
+                            <a href="https://in.linkedin.com/in/nirmal-labs-680102187" class="fab fa-linkedin-in"><i
+                                    class="bx bxl-instagram"></i></a>
+                            <a href="https://www.instagram.com/nirmallabs/" class="fab fa-instagram"><i
+                                    class="bx bxl-skype"></i></a>
+                            <a href="https://nirmallabs.com/" class="fab fa-google-plus-g"><i
+                                    class="bx bxl-linkedin"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="container footer-bottom clearfix">
+            <div class="copyright">
+                © Copyright 2019 <strong><span>NirmalLab</span></strong>. All Rights Reserved
+            </div>
+
+        </div>
+    </footer>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center active"
+        style="text-decoration: none;"><i class="fas fa-arrow-up"></i></a>
+
+
+
+
+
+    <!-- #footer -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/counterup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/mobile-nav.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/lottie.js" type="text/javascript"></script>
+    <script src="js/home-animation.js" type="text/javascript"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js" type="text/javascript"></script>
+    <script src="js/index.js"> </script>
+    <script src="js/before-after.min.js"> </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+        });
+    </script>
+
+    <script src="https://elucidata.io/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1.6"></script>
+    <script>
+        var twentyseventeenScreenReaderText = { "quote": "<svg class=\"icon icon-quote-right\" aria-hidden=\"true\" role=\"img\"> <use href=\"#icon-quote-right\" xlink:href=\"#icon-quote-right\"><\/use> <\/svg>" };
+    </script>
+    <script
+        src="https://elucidata.io/wp-content/themes/elucidata/assets/js/skip-link-focus-fix.js?ver=20161114"></script>
+    <script src="https://elucidata.io/wp-content/themes/elucidata/assets/js/global.js?ver=20190121"></script>
+    <script src="https://elucidata.io/wp-content/themes/elucidata/assets/js/jquery.scrollTo.js?ver=2.1.2"></script>
+    <script src="wp-includes/js/wp-embed.min9dff.js?ver=5.3.2"></script>
+
+    <!-- </main> -->
+    </div>
+
+    <script src="path/to/carousel/lib"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

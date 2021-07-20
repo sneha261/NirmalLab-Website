@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- firebaseapp -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-analytics.js"></script> -->
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="allcss.css">
+
+    <title>Hello</title>
+
+    <head>
+        <style>
+            .form-group .value {
+                width: -webkit-calc(100% - 188px);
+                width: -moz-calc(100% - 188px);
+                width: calc(100% - 188px)
+            }
+
+            .form-group .value {
+                display: block;
+                width: 100%
+            }
+
+            input,
+            textarea {
+                outline: none;
+                margin: 0;
+                border: none;
+                -webkit-box-shadow: none;
+                -moz-box-shadow: none;
+                box-shadow: none;
+                width: 100%;
+                font-size: 14px;
+                font-family: inherit
+            }
+
+            textarea {
+                resize: none
+            }
+
+            .input-group {
+                position: relative;
+                margin: 0
+            }
+
+            .input--style-6,
+            .textarea--style-6 {
+                background: 0 0;
+                line-height: 38px;
+                border: 1px solid #ccc;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                border-radius: 3px;
+                color: #666;
+                font-size: 15px;
+                -webkit-transition: all .4s ease;
+                -o-transition: all .4s ease;
+                -moz-transition: all .4s ease;
+                transition: all .4s ease;
+                padding: 0 20px
+            }
+
+            .input--style-6::-webkit-input-placeholder,
+            .textarea--style-6::-webkit-input-placeholder {
+                color: #999
+            }
+
+            .input--style-6:-moz-placeholder,
+            .textarea--style-6:-moz-placeholder {
+                color: #999;
+                opacity: 1
+            }
+
+            .input--style-6::-moz-placeholder,
+            .textarea--style-6::-moz-placeholder {
+                color: #999;
+                opacity: 1
+            }
+
+            .input--style-6:-ms-input-placeholder,
+            .textarea--style-6:-ms-input-placeholder {
+                color: #999
+            }
+
+            .input--style-6:-ms-input-placeholder,
+            .textarea--style-6:-ms-input-placeholder {
+                color: #999
+            }
+
+            .input--style-6:focus,
+            .textarea--style-6:focus {
+                -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .15);
+                -moz-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .15);
+                box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .15);
+                -webkit-transform: translateY(-3px);
+                -moz-transform: translateY(-3px);
+                -ms-transform: translateY(-3px);
+                -o-transform: translateY(-3px);
+                transform: translateY(-3px)
+            }
+
+            .input-file {
+                display: none
+            }
+
+            .input-file+label {
+                font-size: 15px;
+                color: #fff;
+                color: #fff;
+                line-height: 40px;
+                background-color: #666;
+                padding: 0 20px;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                border-radius: 3px;
+                display: inline-block;
+                margin-right: 15px;
+                -webkit-transition: all .4s ease;
+                -o-transition: all .4s ease;
+                -moz-transition: all .4s ease;
+                transition: all .4s ease;
+                cursor: pointer
+            }
+
+            .input-file:focus+label,
+            .input-file+label:hover {
+                background: #1b1b1b
+            }
+
+            .input-file__info {
+                font-size: 15px;
+                color: #666
+            }
+        </style>
+    </head>
+
+<body>
+
+
+    <!-- Apply Now Page  -->
+
+    <div class="container my-3">
+        <h3>Apply Now</h3>
+        <form class="contact-form" method="post">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="name form-control" id="name" name='name' placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <label for="name">Email</label>
+                <input type="email" class="email form-control" id="email" name='email' placeholder="Enter Your Email">
+            </div>
+
+            <div class="form-group">
+                <label for="name">Phone</label>
+                <input type="tel" class="phone form-control" id="phone" name='phone'
+                    placeholder="Enter Your Phone Number">
+            </div>
+            <div class="form-group">
+
+                <label for="name">Upload CV</label>
+                <div class="value">
+
+                    <div class="input-group js-input-file">
+                        <input class="input-file" type="file" name="file_cv" id="file">
+                        <label class="label--file" for="file">Choose file</label>
+                        <span class="input-file__info">No file chosen</span>
+                    </div>
+                    <div class="label--desc">Upload your CV/Resume or any other relevant file. Max file size
+                        50 MB</div>
+                </div>
+            </div>
+
+
+            <button type="submit" class=" btn-learn-more"><strong>Submit</strong></button>
+        </form>
+
+
+
+    </div>
+
+    <script>
+        // Form js 
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-23581568-13');
+        // Form input validation
+        (function ($) {
+            'use strict';
+            try {
+                var file_input_container = $('.js-input-file');
+                if (file_input_container[0]) {
+                    file_input_container.each(function () {
+                        var that = $(this);
+                        var fileInput = that.find(".input-file"); var info = that.find(".input-file__info");
+                        fileInput.on("change", function () {
+                            var fileName;
+                            fileName = $(this).val();
+                            if (fileName.substring(3, 11) == 'fakepath') {
+                                fileName = fileName.substring(12);
+                            }
+                            if (fileName == "") {
+                                info.text("No file chosen");
+                            } else {
+                                info.text(fileName);
+                            }
+                        })
+                    });
+                }
+            }
+            catch (e) {
+                console.log(e);
+            }
+        })(jQuery);
+
+
+        var firebaseConfig = {
+            apiKey: "AIzaSyD2HLN7zNDawnj-JmoJ0zUHpFcAM4LKGHo",
+            authDomain: "nirmallabs-175ec.firebaseapp.com",
+            databaseURL: "https://nirmallabs-175ec-default-rtdb.firebaseio.com",
+            projectId: "nirmallabs-175ec",
+            storageBucket: "nirmallabs-175ec.appspot.com",
+            messagingSenderId: "147848261554",
+            appId: "1:147848261554:web:cdeb055ce47057366f3eab",
+            measurementId: "G-JFEEFR35PZ"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        // firebase.analytics();
+
+        // Refernece contactInfo collections
+        let contactInfo = firebase.database().ref("resume");
+        var selectedFile;
+
+        //contactus page
+        document.querySelector(".contact-form").addEventListener("submit", submitForm);
+        $("#file").on("chnage", function (event) {
+                var selectedFile = event.target.files[0];
+                $("#submit").show();
+            });
+        function submitForm(e) {
+            e.preventDefault();
+            
+            //   Get input Values
+            // var filename=selectedFile.name;
+            let Filename = document.querySelector(".input-file").value;
+            let storageRef = firebase.storage().ref('/files/' + Filename);
+            let uploadTask = storageRef.put(selectedFile);
+            uploadTask.on('stage_changed', function (snapshot) {
+
+            }, function (error) {
+
+            }, function () {
+                let downloadURL = uploadTask.snapshot.downloadURL;
+                console.log(downloadURL);
+            });
+
+            let name = document.querySelector(".name").value;
+            let email = document.querySelector(".email").value;
+            let phone = document.querySelector(".phone").value;
+            // let message = document.querySelector(".message").value;
+            // console.log(name, email, phone, message);
+
+            saveContactInfo(Filename, name, email, phone);
+
+            document.querySelector(".contact-form").reset();
+
+            sendEmail(Filename, name, email, phone);
+
+
+        }
+        // Save infos to Firebase
+        function saveContactInfo(Filename, name, email, phone) {
+            let newContactInfo = contactInfo.push();
+
+            newContactInfo.set({
+                Filename: Filename,
+                name: name,
+                email: email,
+                phone: phone,
+
+            });
+
+            retrieveInfos();
+        }
+
+
+        //Retrieve Infos
+        function retrieveInfos() {
+            let ref = firebase.database().ref("resume");
+            ref.on("value", gotData);
+        }
+
+
+        function gotData(data) {
+            let info = data.val();
+            let keys = Object.keys(info);
+
+            for (let i = 0; i < keys.length; i++) {
+                let infoData = keys[i];
+                let Filename = info[infoData].Filename;
+                let name = info[infoData].name;
+                let email = info[infoData].email;
+                let phone = info[infoData].phone;
+                // let message = info[infoData].message;
+                console.log(Filename, name, email, phone);
+            }
+
+        }
+
+        retrieveInfos();
+        //send email info
+
+        function sendEmail(Filename, name, email, phone) {
+
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "sg863749@gmail.com",
+                Password: "xpduramifforomwm",
+
+                // To: ["sg3006621@gmail.com","sg863749@gmail.com","akshay.nirmal.labs@gmail.com","contact@nirmallabs.com"],
+                To: "sg863749@gmail.com",
+                From: "sg863749@gmail.com",
+                Subject: `${name} sent you a message`,
+                Body: `Name:${name} <br/> Email:${email}  <br/> Contact number:${phone}  <br/> Resume:${Filename}`,
+
+
+
+            }).then((message) => alert("mail sent successfully"));
+        }
+    </script>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</body>

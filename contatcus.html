@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- firebaseapp -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase.js"></script>
+  <!-- <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-analytics.js"></script> -->
+  <script src=
+    "https://smtpjs.com/v3/smtp.js">
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="allcss.css">
+
+  <title>
+    Nirmal Labs | No 1 IT Company in Varanasi | Uttar Pradesh </title>
+
+  <head>
+    <style>
+
+    </style>
+  </head>
+
+<body>
+
+  <!--  //navbar-->
+  <header id="header" class="fixed-top header-scrolled">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-default ">
+      <a class="navbar-brand" href="#">
+        <img src="./img/logo.PNG" width="100" height="40" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto mx-2">
+
+          <li class="nav-item active mx-2">
+            <a class="nav-link" href="index.html"><strong>Home </strong><span class="sr-only">(current)</span></a>
+          </li>
+
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="Team.html"><strong>Team</strong></a>
+          </li>
+
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="aboutus.html"><strong>AboutUs</strong></a>
+          </li>
+
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="careers.html"><strong>Careers</strong></a>
+          </li>
+
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#"><strong>Services</strong></a>
+          </li>
+
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="product.html"><strong>Products</strong></a>
+          </li>
+
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#firstcode"><strong>FirstCode</strong></a>
+          </li>
+
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="contatcus.html"><strong>ContactUs</strong></a>
+          </li>
+        </ul>
+
+        <form class="form-inline  my-2 my-lg-0">
+          <!--          Search Bar-->
+
+          <div class="searchbar">
+            <input class="search_input" type="text" name="" placeholder="Search...">
+            <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+          </div>
+
+
+
+          <!-- Button trigger to Login modal -->
+          <!-- {% if user.is_authenticated %}
+          <ul class="navbar-nav mr-auto">
+  
+               <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <strong>Welcome {{request.user}}</strong>
+  
+          </a>
+  
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/logout">Logout</a>
+          </div>
+               </li>
+          </ul>
+  
+          {% else %} -->
+
+          <!-- Login Page -->
+          <!-- <button type="button" class="btn btn-primary mx-2" data-toggle="modal" data-target="#LoginModal">
+            <strong>Login</strong>
+          </button> -->
+          <!-- Button trigger to Signup modal -->
+
+          <!-- <button type="button" class=" btn btn-primary btn-login " data-toggle="modal" data-target="#SignupModal">
+            <strong>Signup</strong>
+          </button> -->
+          <!-- {%  endif %} -->
+        </form>
+        <!-- Signup Modal -->
+        <div class="modal fade" id="SignupModal" tabindex="-1" aria-labelledby="SignupModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="SignupModalLabel">Signup here</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form action='/signup' method='post'>
+
+
+                  <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" name="username" id="username"
+                      placeholder="Choose a unique username (Lowercase & Alphanumeric)" required>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="fname">First name</label>
+                    <input type="text" class="form-control" name="fname" id="fname" placeholder="Enter first name"
+                      required>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="lname">Last name</label>
+                    <input type="text" class="form-control" name="lname" id="lname" placeholder="Enter last name"
+                      required>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com"
+                      required>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="pass1">Choose a Password</label>
+                    <input type="password" class="form-control" name="pass1" id="pass1" placeholder="******" required>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="pass2">Confirm a Password</label>
+                    <input type="password" class="form-control" name="pass2" id="pass2"
+                      placeholder="Enter your password again" required>
+                  </div>
+                  <!-- {% csrf_token %} -->
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+              <div class="modal-footer">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--  login Modal -->
+        <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="LoginModalLabel">Login here</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form action='/login' method='post'>
+                  <!-- {% csrf_token %} -->
+
+                  <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" name="loginuser" id="loginuser"
+                      placeholder="Choose a unique username (Lowercase & Alphanumeric)" required>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="pass">Password</label>
+                    <input type="password" class="form-control" name="loginpassword" id="loginpassword"
+                      placeholder="******">
+
+
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+
+                </form>
+              </div>
+              <div class="modal-footer">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+  <!-- Contact Page  -->
+
+  <div class="container my-3">
+    <h3>Contact Us</h3>
+    <form class="contact-form" method="post">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="name form-control" id="name" name='name' placeholder="Enter Your Name">
+      </div>
+      <div class="form-group">
+        <label for="name">Email</label>
+        <input type="email" class="email form-control" id="email" name='email' placeholder="Enter Your Email">
+      </div>
+
+      <div class="form-group">
+        <label for="name">Phone</label>
+        <input type="tel" class="phone form-control" id="phone" name='phone' placeholder="Enter Your Phone Number">
+      </div>
+
+
+      <div class="form-group">
+        <label for="desc">How May We Help You?</label>
+        <textarea class="message form-control" id="desc" name='desc' rows="3"></textarea>
+      </div>
+      <button type="submit" class=" btn-learn-more"><strong>Submit</strong></button>
+    </form>
+
+
+
+  </div>
+
+  <!-- Footer  -->
+  <!-- <footer id="footer"> -->
+   
+    <!-- Copyright -->
+    <!-- <div class="container footer-bottom clearfix">
+        <div class="copyright">
+            © Copyright 2019 <strong><span>NirmalLab</span></strong>. All Rights Reserved
+        </div>
+
+    </div>
+</footer> -->
+
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyD2HLN7zNDawnj-JmoJ0zUHpFcAM4LKGHo",
+      authDomain: "nirmallabs-175ec.firebaseapp.com",
+      databaseURL: "https://nirmallabs-175ec-default-rtdb.firebaseio.com",
+      projectId: "nirmallabs-175ec",
+      storageBucket: "nirmallabs-175ec.appspot.com",
+      messagingSenderId: "147848261554",
+      appId: "1:147848261554:web:cdeb055ce47057366f3eab",
+      measurementId: "G-JFEEFR35PZ"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    // firebase.analytics();
+
+    // Refernece contactInfo collections
+    let contactInfo = firebase.database().ref("infos");
+
+
+    //contactus page
+    document.querySelector(".contact-form").addEventListener("submit", submitForm);
+
+    function submitForm(e) {
+      e.preventDefault();
+      //   Get input Values
+      let name = document.querySelector(".name").value;
+      let email = document.querySelector(".email").value;
+      let phone = document.querySelector(".phone").value;
+      let message = document.querySelector(".message").value;
+      // console.log(name, email, phone, message);
+
+      saveContactInfo(name, email, phone, message);
+
+      document.querySelector(".contact-form").reset();
+
+      sendEmail(name, email, message, phone);
+
+    }
+    // Save infos to Firebase
+    function saveContactInfo(name, email, phone, message) {
+      let newContactInfo = contactInfo.push();
+
+      newContactInfo.set({
+        name: name,
+        email: email,
+        phone: phone,
+        message: message,
+      });
+
+      retrieveInfos();
+    }
+
+    //Retrieve Infos
+    function retrieveInfos() {
+      let ref = firebase.database().ref("infos");
+      ref.on("value", gotData);
+    }
+
+
+    function gotData(data) {
+      let info = data.val();
+      let keys = Object.keys(info);
+
+      for (let i = 0; i < keys.length; i++) {
+        let infoData = keys[i];
+        let name = info[infoData].name;
+        let email = info[infoData].email;
+        let phone = info[infoData].phone;
+        let message = info[infoData].message;
+        console.log(name, email, phone, message);
+      }
+
+    }
+    
+    retrieveInfos();
+    //send email info
+    
+    function sendEmail(name, email, message, phone) {
+      
+      Email.send({
+        Host: "smtp.gmail.com",
+        Username: "sg863749@gmail.com",
+        Password: "xpduramifforomwm",
+        
+        // To: ["sg3006621@gmail.com","sg863749@gmail.com","akshay.nirmal.labs@gmail.com","contact@nirmallabs.com"],
+        To:"sg863749@gmail.com",
+        From: "sg863749@gmail.com",
+        Subject: `${name} sent you a message`,
+        Body: `Name:${name} <br/> Email:${email} <br/> Message:${message} <br/> Contact number:${phone}`,
+
+
+      }).then((message) => alert("mail sent successfully"));
+    } 
+
+
+    // Hamburger Menu 
+    var button = document.getElementById('navbar-toggler'),
+      span = button.getElementsByTagName('span')[0];
+
+    button.onclick = function () {
+      span.classList.toggle('.navbar-toggler-icon-close');
+    };
+
+    $('.navbar-toggler').on('click', toggleOnClass);
+
+    function toggleOnClass(event) {
+      var toggleElementId = '#' + $(this).data('toggle'),
+        element = $(toggleElementId);
+
+      element.toggleClass('on');
+
+    }
+
+    // close hamburger menu after click a
+    $('.nav li a').on("click", function () {
+      $('.navbar-toggler').click();
+    });
+  </script>
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</body>
